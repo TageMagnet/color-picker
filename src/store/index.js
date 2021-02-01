@@ -9,5 +9,7 @@ export default new Vuex.Store({
   },
   getters: {
     // Add a getter with a parameter to filter the colors in the state
+    firstN: state => n =>
+    state.colors.filter( (_, index) => index < n )
   }
 })

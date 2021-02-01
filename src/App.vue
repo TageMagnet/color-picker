@@ -15,6 +15,11 @@ export default {
     text: "",
     backgroundColor: ""
   }},
+  computed: {
+    firstFour() {
+      return this.$store.getters.firstN(4)
+    }
+  }
 }
 </script>
 
